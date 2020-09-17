@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common'
 import { utilities, WinstonModule } from 'nest-winston'
+import { ProvidersModule } from './providers/providers.module';
 import * as winston from 'winston'
 
 @Module({
@@ -15,6 +16,7 @@ import * as winston from 'winston'
       ],
       level: 'debug',
     }),
+    ProvidersModule,
   ],
   controllers: [],
   providers: [],

@@ -1,5 +1,5 @@
 {
-  "name": "wb-template",
+  "name": "wb-submission-watcher",
   "version": "0.0.1",
   "description": "A component under the 'Wisdom' discord bot ecosystem, built over Nest.",
   "author": {

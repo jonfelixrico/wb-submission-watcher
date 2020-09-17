@@ -1,5 +1,7 @@
 import { Module } from '@nestjs/common'
 import { utilities, WinstonModule } from 'nest-winston'
+import { ControllersModule } from './controllers/controllers.module';
+import { ServicesModule } from './services/services.module';
 import { ProvidersModule } from './providers/providers.module';
 import * as winston from 'winston'
 
@@ -16,6 +18,8 @@ import * as winston from 'winston'
       ],
       level: 'debug',
     }),
+    ControllersModule,
+    ServicesModule,
     ProvidersModule,
   ],
   controllers: [],
